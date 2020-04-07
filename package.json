@@ -24,6 +24,7 @@
     "start": "node ./src/App_Serv.js",
     "start-react":"react-scripts start",
     "start-serv": "nodemon ./src/App_Serv.js",
+    "heroku-postbuild":"npm run build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

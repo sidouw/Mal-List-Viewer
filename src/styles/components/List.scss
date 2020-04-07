@@ -1,0 +1,17 @@
+.ListTitle{
+    // background: thistle;
+    text-align: center;
+    font-size: $Mf-size;
+    margin: $s-size 0;
+    padding: 1rem 0;
+}
+
+.shareBtn{
+    background: $s-color;
+    position: fixed;
+    border: none;
+    top: 20vh;
+    left: 0;
+    width: 5rem;
+    height: 3rem;
+}

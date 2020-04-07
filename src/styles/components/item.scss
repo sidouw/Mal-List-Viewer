@@ -1,0 +1,49 @@
+
+.listtitle{
+    background: $s-color;
+    height: 70px; 
+    text-align: center;
+}
+.listitem{
+    background: darken($s-color, 15%); 
+    height: 50px; 
+}
+
+.item__title{
+
+//  background: blueviolet;
+ padding-left: $m-size;
+}
+.item__score{
+    padding:  0 $m-size;
+    text-align: center;
+}
+.item__status{
+    @extend .item__score
+
+}
+.item__episodes{
+
+    @extend .item__score
+    
+}
+.item__watched{
+
+    @extend .item__score
+}
+.item__volumes{
+
+    @extend .item__score
+}
+.item__chapters{
+
+    @extend .item__score
+}
+.item__readvolumes{
+
+    @extend .item__score
+}
+.item__readchapters{
+    @extend .item__score
+
+}

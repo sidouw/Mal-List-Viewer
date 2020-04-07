@@ -21,7 +21,8 @@
     "uuid": "^7.0.3"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node ./src/App_Serv.js",
+    "start-react":"react-scripts start",
     "start-serv": "nodemon ./src/App_Serv.js",
     "build": "react-scripts build",
     "test": "react-scripts test",

@@ -4,7 +4,7 @@
 const postData = ( data = {},push)=> {
 
 //http://127.0.1.1:1919
-    return fetch('http://127.0.1.1:1919/endpoint', {
+    return fetch('/endpoint', {
       
         method: 'post',
         headers: {
@@ -28,7 +28,7 @@ const postData = ( data = {},push)=> {
 
   const getData = (id)=>{
     //http://127.0.1.1:1919
-    return fetch(`http://127.0.1.1:1919/endpoint/${id}`).then(data=>data.json()).then((data)=>{
+    return fetch(`/endpoint/${id}`).then(data=>data.json()).then((data)=>{
         return data
     })
     

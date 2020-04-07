@@ -1,17 +1,26 @@
 
-.listtitle{
-    background: $s-color;
-    height: 70px; 
+.listhead{
+
+    line-height: 60px;
     text-align: center;
 }
+
 .listitem{
-    background: darken($s-color, 15%); 
     height: 50px; 
+    line-height: 40px;
+    border-top: solid 1px darken($sf-color, 7%) ;
+}
+.titleCol{
+    display: flex;
+    justify-content: space-between;
+
+    a{
+        text-decoration: none;
+        color: $f-color;
+    }
 }
 
 .item__title{
-
-//  background: blueviolet;
  padding-left: $m-size;
 }
 .item__score{

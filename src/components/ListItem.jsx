@@ -3,13 +3,24 @@ import  React from 'react'
 
 const  ListItem = ({item,type})=>{
 
+    const isAnime = type==='A'
+    const Malurl = isAnime ? 'https://myanimelist.net/anime/' : 'https://myanimelist.net/manga/'
+
+
     return (
-        <tbody className = {item.title === 'Title'?'listtitle':'listitem'}>
-        <tr className = {item.title === 'Title'?'listtitle':'listitem'}>
-        <td className = "item__title">{item.title}</td>
+
+        
+        <tr className = {item.title === 'Title' ? 'listhead' : 'listitem'}>
+
+        <td className = "item__title">
+        <div className ='titleCol'>
+        {item.title}
+         { !(item.title === 'Title') &&<a href ={Malurl+item.id} target ='blank'>Mal Page</a>}
+        </div>
+        </td>
         <td className = "item__score">{item.score}</td>
         <td className = "item__status">{item.status}</td>
-        {type==='A'?
+        {isAnime?
         <>
         <td className = "item__episodes">{item.episodes}</td>
         <td className = "item__watched">{item.watched}</td>
@@ -24,7 +35,6 @@ const  ListItem = ({item,type})=>{
         
         }
         </tr>
-        </tbody>
         
     )
 }

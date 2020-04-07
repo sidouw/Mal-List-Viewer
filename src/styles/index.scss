@@ -12,14 +12,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(19, 19, 31);
-  color: $ff-color;
+  background:$f-color;
+  color: $f-color;
+  font-size: 16px;
 }
 
 
 header{
-  background: $f-color;
-  border-bottom: solid 2px darken($f-color,5%);
+  background: $t-color;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   h1{
     font-size: $Lf-size;
     margin: 0;
@@ -27,6 +28,6 @@ header{
 }
 .header__title{
   text-decoration: none;
-  color: $sf-color;
+  color:$sf-color;
   
 }

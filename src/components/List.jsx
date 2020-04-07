@@ -21,16 +21,23 @@ const List = ()=>{
     }
 
     return (
-        <div >
-        <h1 className = 'ListTitle'>{isManga? 'Manga List' : 'Anime List'}</h1>
-        <table>
+
+        <div className ='list'>
         
-        <ListItem  item={titles} type = {itemlisttype} />
-        {itemlist.map((item)=>{
-            return <ListItem key = {item.id} item={item} type = {itemlisttype}/>
-        })}
+        <h1 className = 'ListTitle'>{isManga? 'Manga List' : 'Anime List'}</h1>
+
+        <table className = "table">
+        
+        <tbody >
+            <ListItem  item={titles} type = {itemlisttype} />
+            {itemlist.map((item)=>{
+                return <ListItem key = {item.id} item={item} type = {itemlisttype}/>
+            })}
+        </tbody>
+
         </table>
         </div>
+
     )
 }
 

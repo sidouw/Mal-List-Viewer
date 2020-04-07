@@ -1,17 +1,41 @@
+.list{
+    background: $sf-color;
+    // color: $f-color;
+    border-radius: 10px;
+    padding: 30px;
+    margin: $xxl-size 0;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
 .ListTitle{
     // background: thistle;
     text-align: center;
     font-size: $Mf-size;
-    margin: $s-size 0;
-    padding: 1rem 0;
+    margin: 0;
+    margin-bottom: $l-size;
+    padding: 0 0;
 }
 
 .shareBtn{
-    background: $s-color;
+    background: $t-color;
     position: fixed;
+    color: $sf-color;
+    font-size: $m-size;
+    font-weight: bold;
     border: none;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 0 10px 10px 0;
     top: 20vh;
     left: 0;
     width: 5rem;
     height: 3rem;
+}
+
+.table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    background: transparent;
+    color: $f-color;
+    border-radius: 10px;
+    
 }

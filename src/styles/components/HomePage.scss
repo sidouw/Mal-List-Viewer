@@ -2,14 +2,14 @@
 
     height: 100vh;
     background-size: cover;
-    color: $sf-color;
+    color: $f-color;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .boxLayout__box{
- background:  $f-color;
+ background:  $sf-color;
  width: 30rem;
  padding: $l-size $m-size;
  text-align: center;
@@ -26,7 +26,7 @@
     // background-color: cadetblue;
     border-radius: 5px;
     height: $xl-size;
-    border: dashed 2px darken(cadetblue, .8);
+    border: dashed 2px $t-color;
     p{
         margin-top: $m-size;
         align-self: center;

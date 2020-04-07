@@ -14,7 +14,7 @@ app.use(express.static(PublicPath))
 
 app.use(bodyParser.json({limit:'1mb'}))
 
-// app.use(cors())
+app.use(cors())
 
 const data = {}
 

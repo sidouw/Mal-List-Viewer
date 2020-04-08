@@ -1,10 +1,13 @@
 .list{
     background: $sf-color;
-    // color: $f-color;
+
     border-radius: 10px;
     padding: 30px;
     margin: $xxl-size 0;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    @media (max-width: $desktop-breakpoint) {
+        margin: $xl-size 0;
+        }
 }
 
 .ListTitle{
@@ -14,6 +17,9 @@
     margin: 0;
     margin-bottom: $l-size;
     padding: 0 0;
+    @media (max-width: $desktop-breakpoint) {
+        font-size: $Sf-size;
+        }
 }
 
 .shareBtn{
@@ -29,6 +35,14 @@
     left: 0;
     width: 5rem;
     height: 3rem;
+
+    @media (max-width: $desktop-breakpoint) {
+        font-size: 1rem;
+        font-weight: bold;
+        width: 3.4rem;
+        height: 2rem;
+        top: 13vh;
+        }
 }
 
 .table{
@@ -38,4 +52,42 @@
     color: $f-color;
     border-radius: 10px;
     
+}
+
+
+.phonevisible{
+    display: none;
+    p{
+        line-height: 20px;
+        margin: 10px 0;
+    }
+}
+.deskvisible{
+    display: none;
+}
+.nonvisble{
+    display: none;
+}
+@media (min-width: $desktop-breakpoint) {
+    .phonevisible{
+        display: none;
+
+    }
+    .deskvisible{
+        display: table-row;
+        
+    }
+
+}
+
+@media (max-width: ($desktop-breakpoint)) {
+
+    .phonevisible{
+        display: table-row;
+    }
+
+    .deskvisible{
+        display: none;
+    }
+
 }

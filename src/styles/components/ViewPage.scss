@@ -1,6 +1,12 @@
+
+
 .errormsg{
+color: $sf-color;
 font-size: $Mf-size;
 position: absolute;
 top: 30%;
 align-self: center;
+@media (max-width: $desktop-breakpoint) {
+    font-size: $Sf-size;
+    }
 }

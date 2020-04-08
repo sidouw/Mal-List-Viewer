@@ -29,9 +29,9 @@ const List = ()=>{
         <table className = "table">
         
         <tbody >
-            <ListItem  item={titles} type = {itemlisttype} />
-            {itemlist.map((item)=>{
-                return <ListItem key = {item.id} item={item} type = {itemlisttype}/>
+            <ListItem  item={titles} type = {itemlisttype} index = '#' />
+            {itemlist.map((item,index)=>{
+                return <ListItem key = {item.id} item={item} type = {itemlisttype } index = {index}/>
             })}
         </tbody>
 

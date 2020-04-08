@@ -1,7 +1,7 @@
 import  React from 'react' 
 
 
-const  ListItem = ({item,type})=>{
+const  ListItem = ({item,type,index})=>{
 
     const isAnime = type==='A'
     const Malurl = isAnime ? 'https://myanimelist.net/anime/' : 'https://myanimelist.net/manga/'
@@ -9,9 +9,9 @@ const  ListItem = ({item,type})=>{
 
     return (
 
-        
-        <tr className = {item.title === 'Title' ? 'listhead' : 'listitem'}>
-
+        <>
+        <tr className = {item.title === 'Title' ? 'listhead deskvisible ' : 'listitem deskvisible'}>
+        <td className = "item__inedx">{index}</td>
         <td className = "item__title">
         <div className ='titleCol'>
         {item.title}
@@ -35,7 +35,32 @@ const  ListItem = ({item,type})=>{
         
         }
         </tr>
+
+        <tr className = {item.title === 'Title' ? 'listhead  nonvisble' : 'listitem phonevisible'}>
+        <td className = "item__inedx">{'#'+index}
+         <p>title:  {item.title}</p>
+         <p>score: {item.score}</p>
+         <p>status: {item.status}</p>
+         {isAnime?
+            <>
+            <p>episodes: {item.episodes}</p>
+            <p>watched: {item.watched}</p>
+             </>
+             :
+             <>
+             <p>volumes: {item.volumes}</p>
+             <p>chapters: {item.chapters}</p>
+             <p>readvolumes: {item.readvolumes}</p>
+             <p>readchapters: {item.readchapters}</p>
+             </>
+            
+            }
+            <a href ={Malurl+item.id} target ='blank'>Open Mal Page</a>
+        </td>
         
+
+        </tr>
+        </>
     )
 }
 

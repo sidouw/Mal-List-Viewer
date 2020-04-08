@@ -14,11 +14,18 @@
  padding: $l-size $m-size;
  text-align: center;
  border-radius: 3px;
+ @media (max-width: $desktop-breakpoint) {
+    margin: 0 50px;
+    }
 }
 
 .boxLayout__title{
     margin: 0 0 $m-size 0;
     line-height: 1;
+    @media (max-width: $desktop-breakpoint) {
+        margin: 0 0 $s-size 0;
+        font-size: 30px;
+        }
    }
 
 
@@ -31,4 +38,10 @@
         margin-top: $m-size;
         align-self: center;
     }
+
+    @media (max-width: $desktop-breakpoint) {
+        height: $xl-size;
+        }
+
   }
+

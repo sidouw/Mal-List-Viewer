@@ -25,7 +25,7 @@ app.post('/endpoint',(req,res)=>{
     data[id] = req.body
     setTimeout(()=>{
         delete data[id]
-    },360000)
+    },3600000)
     res.send({id})
     
 })
